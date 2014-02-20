@@ -9,7 +9,7 @@ function startServer(){
 
 function stopServer(){
   if(screenOnline()){
-    shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"end\r\"`\";");
+    shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"end\r\"`\" && exit");
   }
 }
 
