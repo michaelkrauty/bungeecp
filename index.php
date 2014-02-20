@@ -23,10 +23,14 @@
             if(count($_POST) > 0 && isset($_POST['stop'])){
               stopServer();
             }
+            if(count($_POST) > 0 && isset($_POST['command'])){
+              executeCommand($_POST['command']);
+            }
           ?>
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
             <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
+            <input name="command" type="text"></input>
           </form>
         </div>
         <br>
