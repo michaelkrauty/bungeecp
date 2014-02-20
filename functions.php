@@ -13,6 +13,10 @@ function stopServer(){
   }
 }
 
+function executeCommand($string){
+  shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"$string\r\"`\"");
+}
+
 function screenOnline(){
   $out = shell_exec("screen -list");
   return strpos($out, "sambish20_bungee");
