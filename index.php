@@ -39,8 +39,8 @@
         </center>
         <br><br><br>
         <h3>debug:</h3>
-        <p><?php if screenOnline(){echo"screen is online";}else{echo"screen is offline";}?></p>
-        <p><?php if serverOnline(){echo"server is online";}else{echo"screen is offline";}?></p>
+        <p><?php if screenOnline(){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
+        <p><?php if serverOnline(){ echo "server is online"; }else{ echo "screen is offline"; }?></p>
         <p></p>
       </div>
     </div>
