@@ -31,9 +31,9 @@
               }
             ?>
             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-              <button name="start" type="submit" class='btn btn-lg btn-success' <?php# if(!serverOnline()){echo "disabled='disabled'";}?>>Start</button>
-              <button name="stop" type="submit" class='btn btn-lg btn-danger' <?php# if(serverOnline()){echo "disabled='disabled'";}?>>Stop</button>
-              <button name="restart" type="submit" class='btn btn-lg btn-warning' <?php# if(serverOnline()){echo "disabled='disabled'";}?>>Restart</button>
+              <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
+              <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
+              <button name="restart" type="submit" class='btn btn-lg btn-warning'>Restart</button>
             </form>
           </div>
         </center>
