@@ -38,7 +38,7 @@
       <p><?php echo shell_exec("screen -list | grep sambish20_bungee");?></p>
       <p><?php echo shell_exec("cd /var/craftsrv/servers/x0009 && pwd");?></p>
       <p><?php echo shell_exec("ls -la /var/craftsrv/servers/x0009");?></p>
-      <p><?php $lol = shell_exec("screen -list | grep sambish20_bungee"); echo preg_replace("/[^0-9]/", "", $lol)?></p>
+      <p><?php $lol = shell_exec("screen -list | grep sambish20_bungee"); echo current(explode(".", $lol));?></p>
     </div>
   </div>
 </body>
