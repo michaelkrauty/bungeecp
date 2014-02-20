@@ -35,7 +35,7 @@
       <br><br><br>
       <h3>debug:</h3>
       <p><?php if(screenOnline()){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
-      <p><?php if(shell_exec("screen -list | grep fehslkdfje") != null){echo "yes";}else{echo "no";}?></p>
+      <p><?php if(shell_exec("screen -list | grep sam") != null){echo "yes";}else{echo "no";}?></p>
     </div>
   </div>
 </body>
