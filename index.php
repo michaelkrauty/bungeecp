@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
   <title>BungeeCP</title>
   <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.php.css" rel="stylesheet">
   <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="webroot/css/index.css" rel="stylesheet">
 </head>
