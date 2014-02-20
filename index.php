@@ -30,12 +30,13 @@
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
             <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
-            <br>
-            <input name="command" type="text"/><input name="submit" type="submit"/>
           </form>
         </div>
         <br>
         <?php include_once "console.inc.php"; ?>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+          <input name="command" type="text"/><input name="submit" type="submit"/>
+        </form>
       </center>
       <br><br><br>
       <h3>debug:</h3>
