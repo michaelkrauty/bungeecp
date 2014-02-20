@@ -30,9 +30,7 @@
               <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
             </form>
           </div>
-          <div class="console">
             <?php include_once "console.inc.php"; ?>
-          </div>
         </center>
         <br><br><br>
         <h3>debug:</h3>
