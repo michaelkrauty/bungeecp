@@ -26,14 +26,10 @@
               if(count($_POST) > 0 && isset($_POST['stop'])) {
                 stopServer();
               }
-              if(count($_POST) > 0 && isset($_POST['restart'])) {
-                restartServer();
-              }
             ?>
             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
               <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
               <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
-              <button name="restart" type="submit" class='btn btn-lg btn-warning'>Restart</button>
             </form>
           </div>
         </center>
