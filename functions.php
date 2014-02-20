@@ -2,7 +2,7 @@
 
 function startServer(){
   if(!screenOnline()){
-    shell_exec("cd /home/minecraft/testbungee/ && screen -S testbungee java -jar BungeeCord.jar");
+    shell_exec("cd /home/minecraft/testbungee/ && screen -dmS testbungee java -jar BungeeCord.jar");
   }else{
     shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \".unhold\r\"`\";");
   }
