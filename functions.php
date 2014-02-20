@@ -3,17 +3,13 @@
 function startServer(){
   if(!screenOnline()){
     shell_exec("cd /home/minecraft/testbungee/ && screen -dmS testbungee java -jar BungeeCord.jar");
-  }else{
-    shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \".unhold\r\"`\";");
   }
 }
 
 function stopServer(){
-  shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \".hold\r\"`\";");
-}
-
-function restartServer(){
-  shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \"end\r\"`\";");
+  if(screenOnline()){
+    shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \"end\r\"`\";");
+  }
 }
 
 function screenOnline(){
