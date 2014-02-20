@@ -2,13 +2,13 @@
 
 function startServer(){
   if(!screenOnline()){
-    shell_exec("cd /home/minecraft/testbungee/ && screen -dmS testbungee java -jar BungeeCord.jar");
+    shell_exec("cd /var/craftsrv/servers/x0009/ && screen -dmS sambish20_bungee java -Xmx256M -jar BungeeCord.jar");
   }
 }
 
 function stopServer(){
   if(screenOnline()){
-    shell_exec("screen -x testbungee -p 0 -X stuff \"`printf \"end\r\"`\";");
+    shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"end\r\"`\";");
   }
 }
 
