@@ -14,30 +14,28 @@
   <?php include_once "functions.php"; ?>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
-      <div class='page-header'>
-        <center>
-          <div id="buttons">
-            <?php
-              if(count($_POST) > 0 && isset($_POST['start'])) {
-                startServer();
-              }
-              if(count($_POST) > 0 && isset($_POST['stop'])) {
-                stopServer();
-              }
-            ?>
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-              <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
-              <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
-            </form>
-          </div>
-          <br>
-          <?php include_once "console.inc.php"; ?>
-        </center>
-        <br><br><br>
-        <h3>debug:</h3>
-        <p><?php if(screenOnline()){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
-        <p></p>
-      </div>
+      <center>
+        <div id="buttons">
+          <?php
+            if(count($_POST) > 0 && isset($_POST['start'])) {
+              startServer();
+            }
+            if(count($_POST) > 0 && isset($_POST['stop'])) {
+              stopServer();
+            }
+          ?>
+          <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
+            <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
+          </form>
+        </div>
+        <br>
+        <?php include_once "console.inc.php"; ?>
+      </center>
+      <br><br><br>
+      <h3>debug:</h3>
+      <p><?php if(screenOnline()){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
+      <p></p>
     </div>
   </div>
 </body>
