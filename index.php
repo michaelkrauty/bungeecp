@@ -36,6 +36,8 @@
       <h3>debug:</h3>
       <p><?php if(screenOnline()){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
       <p><?php echo shell_exec("screen -list | grep sam");?></p>
+      <p><?php echo shell_exec("cd /var/craftsrv/servers/x0009 && pwd");?></p>
+      <p><?php echo shell_exec("ls -la /var/craftsrv/servers/x0009");?></p>
     </div>
   </div>
 </body>
