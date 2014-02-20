@@ -24,7 +24,7 @@ function screenOnline(){
 function serverOnline(){
   include_once 'status.class.php';
   $status = new MinecraftServerStatus();
-  $response = $status->getStatus("192.187.118.202", 65437);
+  $response = $status->getStatus("localhost", 65437);
   if($response){
     return true;
   }else{
