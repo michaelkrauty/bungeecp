@@ -14,7 +14,7 @@ function stopServer(){
 
 function screenOnline(){
   $out = shell_exec("screen -list");
-  return strpos($out, "testbungee");
+  return strpos($out, "sambish20_bungee");
 }
 
 ?>
