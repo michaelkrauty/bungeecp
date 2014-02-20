@@ -17,10 +17,10 @@
       <center>
         <div id="buttons">
           <?php
-            if(count($_POST) > 0 && isset($_POST['start'])) {
+            if(count($_POST) > 0 && isset($_POST['start'])){
               startServer();
             }
-            if(count($_POST) > 0 && isset($_POST['stop'])) {
+            if(count($_POST) > 0 && isset($_POST['stop'])){
               stopServer();
             }
           ?>
