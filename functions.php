@@ -17,15 +17,4 @@ function screenOnline(){
   return strpos($out, "testbungee");
 }
 
-function serverOnline(){
-  include_once 'status.class.php';
-  $status = new MinecraftServerStatus();
-  $response = $status->getStatus("localhost", 65437);
-  if($response){
-    return true;
-  }else{
-    return false;
-  }
-}
-
 ?>
