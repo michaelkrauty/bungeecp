@@ -30,7 +30,8 @@
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
             <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
-            <input name="command" type="text"></input>
+            <br>
+            <input name="command" type="text"/><input name="submit" type="submit"/>
           </form>
         </div>
         <br>
