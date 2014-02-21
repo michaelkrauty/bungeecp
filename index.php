@@ -35,7 +35,7 @@
         <br>
         <?php include_once "console.inc.php"; ?>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-          <input name="command" class="form-control" placeholder="Enter a command here..." type="text"/><input name="submit" class="btn btn btn-primary" type="submit"/>
+          <input name="command" class="form-control" placeholder="Enter a command here..." type="text"/>
         </form>
       </center>
       <br><br><br>
