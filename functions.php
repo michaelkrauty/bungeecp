@@ -10,7 +10,13 @@ function startServer(){
 function stopServer(){
   if(screenOnline()){
     shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"end\r\"`\"");
+      
   }
+}
+
+function getPID(){
+  $lol = shell_exec("screen -list | grep sambish20_bungee");
+  return current(explode(".", $lol));
 }
 
 function executeCommand($string){
