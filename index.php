@@ -47,7 +47,11 @@
       <p><?php if(screenOnline()){ echo "screen is online"; }else{ echo "screen is offline"; }?></p>
       <p><?php echo shell_exec("screen -list | grep sambish20_bungee");?></p>
       <p><?php echo shell_exec("cd /var/craftsrv/servers/x0009 && pwd");?></p>
-      <p><?php echo shell_exec("ls -la /var/craftsrv/servers/x0009");?></p>
+      <?php
+        $lel shell_exec("ls -la /var/craftsrv/servers/x0009");
+        $str = str_replace("\n", "<br>", $lel);
+      ?>
+      <p><?php echo $str; ?></p>
       <p><?php echo getPID();?></p>
     </div>
   </div>
