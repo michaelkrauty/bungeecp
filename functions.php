@@ -19,6 +19,10 @@ function getPID(){
   return current(explode(".", $lol));
 }
 
+function forceStopServer(){
+  shell_exec("kill ".getPID());
+}
+
 function executeCommand($string){
   shell_exec("screen -x sambish20_bungee -p 0 -X stuff \"`printf \"$string\r\"`\"");
 }
