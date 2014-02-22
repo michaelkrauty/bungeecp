@@ -23,6 +23,9 @@
             if(count($_POST) > 0 && isset($_POST['stop'])){
               stopServer();
             }
+            if(count($_POST) > 0 && isset($_POST['forcestop'])){
+              forceStopServer();
+            }
             if(count($_POST) > 0 && isset($_POST['command'])){
               executeCommand($_POST['command']);
             }
@@ -30,6 +33,7 @@
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
             <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
+            <button name="forcestop" type="submit" class="btn btn-lg btn-danger">Force Stop</button>
           </form>
         </div>
         <br>
