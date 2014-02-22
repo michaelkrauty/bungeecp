@@ -32,7 +32,7 @@
           ?>
           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <button name="start" type="submit" class='btn btn-lg btn-success'>Start</button>
-            <button name="stop" type="submit" class='btn btn-lg btn-danger'>Stop</button>
+            <button name="stop" type="submit" class='btn btn-lg btn-warning'>Stop</button>
             <button name="forcestop" type="submit" class="btn btn-lg btn-danger">Force Stop</button>
           </form>
         </div>
