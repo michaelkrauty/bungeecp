@@ -48,7 +48,7 @@
       <p><?php echo shell_exec("screen -list | grep sambish20_bungee");?></p>
       <p><?php echo shell_exec("cd /var/craftsrv/servers/x0009 && pwd");?></p>
       <?php
-        $lel = shell_exec("ls -la /var/craftsrv/servers/x0009");
+        $lel = shell_exec("ls /var/craftsrv/servers/x0009");
         $str = str_replace("\n", "<br>", $lel);
       ?>
       <p><?php echo $str; ?></p>
